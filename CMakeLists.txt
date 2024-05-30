@@ -8,7 +8,14 @@ project(learningCMake VERSION 0.1.0
 # comment
 if (WIN32)
   set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+
+  # execute_process(
+    # COMMAND cmd /c "C:\\Program Files (x86)\\Intel\\oneAPI\\setvars.bat"
+	# )
 endif()
+
+include(FortranCInterface)
+FortranCInterface_VERIFY(CXX)
 
 set(GLOBAL_CXX_STANDARD cxx_std_20)
 
