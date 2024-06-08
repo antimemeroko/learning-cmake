@@ -7,7 +7,7 @@
 int main(int argc, char const *argv[]) {
   Group::Tetrahedron t;
 
-  std::cout << "Hello world! " << successor(t.value) << predecessor(t.value) << std::endl;
+  std::cout << "Hello world! " << successor(t.value) << " " << predecessor(t.value) << std::endl;
 
   return 0;
 }

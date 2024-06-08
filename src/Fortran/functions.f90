@@ -7,9 +7,8 @@ module functions
 
 contains
 
-  function predecessor(n) result(retval) bind(C, name="predecessor")
+  pure integer(c_int) function predecessor(n) result(retval) bind(C, name="predecessor")
     integer(c_int), value, intent(in) :: n
-    integer(c_int) :: retval
 
     retval = n - 1
   end function predecessor
